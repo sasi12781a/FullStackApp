@@ -15,8 +15,7 @@ const App=()=>{
     setMode(!mode)
   }
   return(
-    <View style={{display:'flex',height:'100%',backgroundColor:mode?"#000":'#fff',justifyContent:'center',alignItems:'center'}}>
-      
+    <View style={{display:'flex',height:'100%',backgroundColor:mode?"#000":'#fff',justifyContent:'center',alignItems:'center'}}> 
       <View style={{flex:1,justifyContent:'flex-start',alignSelf:"flex-end"}}>
         <TouchableOpacity  onPress={Mode}>
           <Text style={{color:mode?"#fff":'#000',margin:10}}>DarkMode</Text>
@@ -26,7 +25,7 @@ const App=()=>{
         <Text style={{color:mode?"#fff":'#000',justifyContent:'center'}}>
           Hi sasi
         </Text>
-      </View>  
+      </View>
     </View>
   )
 }
