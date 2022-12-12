@@ -49,9 +49,6 @@ const App=()=>{
           </Text>
         </TouchableOpacity>
       </SafeAreaView>
-      <View style={{flex:3}}>
-        
-      </View>
     </View>
   )
 }
