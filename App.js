@@ -41,9 +41,17 @@ const App=()=>{
           <Text style={{color:mode?"#fff":'#000',margin:10}}>DarkMode</Text>
         </TouchableOpacity>
       </View>
-      <SafeAreaView style={{flex:4}}>
-      {keys.map((value,key)=>(<TextInput placeholder={`Enter ${value}`} key={key} style={styles.input} value={eval(value)} onChangeText={eval(stateObj[value])}/>))}
+      <SafeAreaView style={{flex:4,justifyContent:'center',alignItems:'center'}}>
+      {keys.map((value,key)=>(<TextInput placeholder={`Enter ${value}`} key={key} style={[styles.input,{borderColor:mode?"#fff":"#000",color:mode?'#fff':'#000',shadowColor:mode?'#fff':'#000'}]} value={eval(value)} onChangeText={eval(stateObj[value])}/>))}
+        <TouchableOpacity style={{height: 40,width:windowWidth*0.3,margin: 12,borderWidth: 1,padding: 10,alignItems:'center',backgroundColor:mode?'#fff':'#000'}}>
+          <Text style={{color:mode?'#000':'#fff'}}>
+            Save
+          </Text>
+        </TouchableOpacity>
       </SafeAreaView>
+      <View style={{flex:3}}>
+        
+      </View>
     </View>
   )
 }
