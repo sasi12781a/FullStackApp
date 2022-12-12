@@ -42,11 +42,12 @@ const App=()=>{
         </TouchableOpacity>
       </View>
       <SafeAreaView style={{flex:4}}>
-        {keys.map((value,key)=>(<TextInput placeholder='Enter Value' key={key} style={styles.input} value={eval(value)} onChangeText={eval(stateObj[value])}/>))}
+      {keys.map((value,key)=>(<TextInput placeholder={`Enter ${value}`} key={key} style={styles.input} value={eval(value)} onChangeText={eval(stateObj[value])}/>))}
       </SafeAreaView>
     </View>
   )
 }
+console.log()
 
 
 const styles = StyleSheet.create({
